@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <style>
+    
+    .wrap{
+        background-color: blue;
+        width: 400px;
+        height: auto;
+        margin: auto;
+        margin-top: -30px;
+        padding: 15px;
+    }
+
+    input[type=text]{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 20px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    input[type=button]{
+        width:89px;
+        padding: 10px;
+        font-size: 22;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+    .box{
+        text-align: center;
+    }
+
+    #del{
+        text-align: center;
+    }
+    
+    #deel{
+        width:50%;
+    }
+    
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; margin-top:30px"> My Simple Calculator</h2> <br><br>
+    <div class= "wrap">
+        <form name= "calcu">
+        <section class= "box">
+            <input type= "text" name= "display"> <br><br>
+            <input type= "button" value= "9" onclick="calcu.display.value+='9'"> 
+            <input type= "button" value= "8" onclick= "calcu.display.value+= '8'">
+            <input type= "button" value= "7" onclick="calcu.display.value+= '7'">
+            <input type= "button" value= "+" onclick= "calcu.display.value+='+'"> <br><br>
+            <input type= "button" value= "6" onclick= "calcu.display.value+= '6'">
+            <input type= "button" value= "5" onclick= "calcu.display.value+='5'">
+            <input type= "button" value= "4" onclick= "calcu.display.value+= '4'">
+            <input type= "button" value= "-" onclick= "calcu.display.value+='-'"> <br><br>
+            <input type= "button" value= "3" onclick= "calcu.display.value+='3'">
+            <input type= "button" value= "2" onclick= "calcu.display.value+='2'">
+            <input type= "button" value= "1" onclick= "calcu.display.value+='1'">
+            <input type= "button" value= "*" onclick= "calcu.display.value+='*'"> <br><br>
+            <input type= "button" value= "0" onclick= "calcu.display.value+='0'">
+            <input type= "button" value= "/" onclick= "calcu.display.value+='/'">
+            <input type= "button" value= "%" onclick= "calcu.display.value+='%'">
+            <input type= "button" value= "=" onclick= "calcu.display.value=eval(calcu.display.value)"> <br><br>
+        </section>
+            <div id="del"> 
+               <input id="deel" type= "button" value= "CLEAR" onclick= "calcu.display.value=''" >
+            </div>
+            </form>
+    </div>
+
+    <p style="text-align: center; margin-top:10px"> Designed by <b>Ifeoluwa</b> using HTML and CSS</p> <br><br>
+ 
+
+    <!--
+        Olhighjay007##**
+olhighjay
+mamblie.com/wp-admin
+    -->
+</body>
+</html>
+
